@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './App.module.scss';
 import LogoHeader from './LogoHeader';
-import SectionsList from './SectionsList';
+import SectionsList, { SectionType } from './SectionsList';
 import SectionItem, { SectionCallback } from './SectionItem';
 import SectionInfo from './SectionInfo';
 
 const App: React.FC = () => {
 
+  const [section, setSection] = useState<SectionType>(SectionType.none);
+
   const clickedWhat: SectionCallback = () => {
-    console.log('Clicked what');
+    setSection(SectionType.what);
   };
 
   const clickedWho: SectionCallback = () => {
-    console.log('Clicked who');
+    setSection(SectionType.who);
   };
+
+  console.log('Current section', SectionType[section]);
 
   return (
     <div className={styles.app}>
@@ -22,7 +26,7 @@ const App: React.FC = () => {
         <SectionItem onClick={clickedWhat}>What</SectionItem>
         <SectionItem onClick={clickedWho}>Who</SectionItem>
       </SectionsList>
-      <SectionInfo />
+      <SectionInfo section={section} />
     </div>
   );
 }

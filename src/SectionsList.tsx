@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './SectionsList.module.scss';
 
-interface Props {  
-  // sectionClick: (section: SectionType) => void;
+export enum SectionType {
+  none, what, who, where, how, why
 }
 
-const SectionsList: React.FC<Props> = (props) => {    
+const SectionsList: React.FC = (props) => {    
   return (
     <div className={styles.sections}>
       {props.children}
