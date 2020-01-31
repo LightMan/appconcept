@@ -3,9 +3,9 @@ import styles from './LogoHeader.module.scss';
 
 const LogoHeader: React.FC = () => {
   return (
-    <div className={styles.container} >
-      <h1>AppConcept</h1>
-    </div>
+    <header className={styles.container} >
+      <h1 className={styles.logoText}>AppConcept</h1>
+    </header>
   );
 }
 

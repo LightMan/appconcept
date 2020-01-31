@@ -1,16 +1,22 @@
 import React from 'react';
 import styles from './SectionInfo.module.scss';
-import { SectionType } from './SectionsList';
+import { SectionType } from './SectionItem';
+import SectionWhat from './SectionWhat';
 
 interface Props {
   section: SectionType;
 }
 
 const SectionInfo: React.FC<Props> = (props) => {
+
+  let sectionElement = <div>unknown</div>;
+  if (props.section === SectionType.what) {
+    sectionElement = <SectionWhat />
+  }
   return (
-    <div className={styles.SectionInfo}>
-      Info for {SectionType[props.section]}
-    </div>
+    <section className={styles.SectionInfo}>
+      {sectionElement}
+    </section>
   );
 }
 
