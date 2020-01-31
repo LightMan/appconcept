@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Colors.css';
+import './styles/Colors.css';
 import './index.scss';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import App from './App/App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -1,9 +1,11 @@
-.sectionItem {
-
+.navItem {
 	font-size: 3vmin;
 
 	&:hover {
 		cursor: pointer;
 	}
+}
 
+.navItemSelected {
+	background-color: red;
 }
