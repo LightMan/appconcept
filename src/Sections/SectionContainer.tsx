@@ -3,8 +3,7 @@ import styles from './SectionContainer.module.scss';
 import { NavItemId } from '../NavBar/NavItem';
 import SectionWhat from './What/SectionWhat';
 import SectionWhere from './Where/SectionWhere';
-import SectionHow from './How/SectionHow';
-import SectionWhy from './Why/SectionWhy';
+import SectionServices from './Services/SectionServices';
 import SectionWhom from './Whom/SectionWhom';
 import SectionWho from './Who/SectionWho';
 
@@ -16,22 +15,19 @@ const SectionContainer: React.FC<Props> = (props) => {
 
   let sectionElement: React.ReactNode;
   switch (props.section) {
-    case NavItemId.what:
+    case NavItemId.solutions:
       sectionElement = (<SectionWhat/>);
       break;
-    case NavItemId.where:
+    case NavItemId.contact:
       sectionElement = (<SectionWhere/>);
       break;
-    case NavItemId.how:
-      sectionElement = (<SectionHow/>);
+    case NavItemId.services:
+      sectionElement = (<SectionServices/>);
       break;
-    case NavItemId.why:
-      sectionElement = (<SectionWhy/>);
-      break;
-    case NavItemId.who:
+    case NavItemId.team:
       sectionElement = (<SectionWho/>);
       break;
-    case NavItemId.whom:
+    case NavItemId.clients:
       sectionElement = (<SectionWhom/>);
       break;
   }

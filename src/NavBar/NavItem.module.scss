@@ -1,10 +1,10 @@
 .navItem {
-	font-size: 3vmin;
+	font-size: 2vmin;
 
 	&:hover {
 		cursor: pointer;
 		animation-name: scaleUp;
-		animation-duration: 500ms;
+		animation-duration: 200ms;
 		animation-timing-function: ease-in-out;
 		animation-fill-mode: forwards;
 
@@ -12,11 +12,11 @@
 			0% {
 				transform: scale(100%);
 			}
-			50% {
-				transform: scale(120%);
+			90% {
+				transform: scale(110%);
 			}
 			100% {
-				transform: scale(110%);
+				transform: scale(105%);
 			}
 		}
 	}
@@ -24,5 +24,5 @@
 
 .navItemSelected {
 	color: var(--color4);
-	font-size: 3.1vmin;
+	// font-size: 3.0vmin;
 }
