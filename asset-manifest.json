@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/appconcept/static/css/main.1893697e.chunk.css",
+    "main.js": "/appconcept/static/js/main.f6dbf3a0.chunk.js",
+    "main.js.map": "/appconcept/static/js/main.f6dbf3a0.chunk.js.map",
+    "runtime-main.js": "/appconcept/static/js/runtime-main.6e813977.js",
+    "runtime-main.js.map": "/appconcept/static/js/runtime-main.6e813977.js.map",
+    "static/js/2.5aa13052.chunk.js": "/appconcept/static/js/2.5aa13052.chunk.js",
+    "static/js/2.5aa13052.chunk.js.map": "/appconcept/static/js/2.5aa13052.chunk.js.map",
+    "index.html": "/appconcept/index.html",
+    "precache-manifest.b76b9ad1a2efa776755bec674f4277f2.js": "/appconcept/precache-manifest.b76b9ad1a2efa776755bec674f4277f2.js",
+    "service-worker.js": "/appconcept/service-worker.js",
+    "static/css/main.1893697e.chunk.css.map": "/appconcept/static/css/main.1893697e.chunk.css.map",
+    "static/js/2.5aa13052.chunk.js.LICENSE": "/appconcept/static/js/2.5aa13052.chunk.js.LICENSE",
+    "static/media/LogoHeader.module.scss": "/appconcept/static/media/keepcalm-medium-webfont.093627dd.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e813977.js",
+    "static/js/2.5aa13052.chunk.js",
+    "static/css/main.1893697e.chunk.css",
+    "static/js/main.f6dbf3a0.chunk.js"
+  ]
+}
