@@ -14,13 +14,14 @@ const App: React.FC = () => {
     setNavItem(navItemId);    
   };
 
-  const navItems = [NavItemId.solutions, NavItemId.contact, NavItemId.services, NavItemId.team, NavItemId.clients];
+  const navItems = [NavItemId.solutions, NavItemId.services, NavItemId.clients, NavItemId.contact];
+  const footerItems = [NavItemId.legal, NavItemId.cookies];
   return (
     <div className={styles.app}>
       <LogoHeader />
       <NavBar navItems={navItems} currentNavItem={navItem} onNavItemChange={navItemChanged}/>
       <SectionContainer section={navItem} />      
-      <Footer />
+      <Footer navItems={footerItems} currentNavItem={navItem} onNavItemChange={navItemChanged}/>
     </div>
   );  
 }

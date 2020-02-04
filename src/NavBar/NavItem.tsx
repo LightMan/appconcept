@@ -5,9 +5,10 @@ export enum NavItemId {
   none = '',
   solutions = 'Soluciones',
   services = 'Servicios',
-  team = 'Equipo',
   clients = 'Clientes',
-  contact = 'Contacto'
+  contact = 'Contacto',
+  legal = 'Aviso Legal',
+  cookies = 'Política de cookies'
 }
 
 export type NavItemCallback = (navItem: NavItemId) => void;

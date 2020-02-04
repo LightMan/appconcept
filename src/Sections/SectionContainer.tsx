@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './SectionContainer.module.scss';
 import { NavItemId } from '../NavBar/NavItem';
-import SectionWhat from './What/SectionWhat';
-import SectionWhere from './Where/SectionWhere';
+import SectionSolutions from './Solutions/SectionSolutions';
 import SectionServices from './Services/SectionServices';
-import SectionWhom from './Whom/SectionWhom';
-import SectionWho from './Who/SectionWho';
+import SectionClientes from './Clients/SectionClients';
+import SectionContact from './Contact/SectionContact';
 
 interface Props {
   section: NavItemId;
@@ -16,19 +15,16 @@ const SectionContainer: React.FC<Props> = (props) => {
   let sectionElement: React.ReactNode;
   switch (props.section) {
     case NavItemId.solutions:
-      sectionElement = (<SectionWhat/>);
+      sectionElement = (<SectionSolutions/>);
       break;
     case NavItemId.contact:
-      sectionElement = (<SectionWhere/>);
+      sectionElement = (<SectionContact/>);
       break;
     case NavItemId.services:
       sectionElement = (<SectionServices/>);
       break;
-    case NavItemId.team:
-      sectionElement = (<SectionWho/>);
-      break;
     case NavItemId.clients:
-      sectionElement = (<SectionWhom/>);
+      sectionElement = (<SectionClientes/>);
       break;
   }
 
