@@ -4,6 +4,7 @@ import LogoHeader from '../Logo/LogoHeader';
 import NavBar from '../NavBar/NavBar';
 import { NavItemCallback, NavItemId } from '../NavBar/NavItem';
 import SectionContainer from '../Sections/SectionContainer';
+import Footer from '../Footer/Footer';
 
 const App: React.FC = () => {
 
@@ -18,7 +19,8 @@ const App: React.FC = () => {
     <div className={styles.app}>
       <LogoHeader />
       <NavBar navItems={navItems} currentNavItem={navItem} onNavItemChange={navItemChanged}/>
-      <SectionContainer section={navItem} />
+      <SectionContainer section={navItem} />      
+      <Footer />
     </div>
   );  
 }
